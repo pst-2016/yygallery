@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Artist photo placeholder">
+  <rect width="400" height="400" fill="#fff3f8"/>
+  <circle cx="200" cy="160" r="70" fill="#ffd9c2"/>
+  <path d="M150 150 q50 -70 100 0 q6 -60 -50 -64 q-56 4 -50 64z" fill="#7a5a4f"/>
+  <g fill="#4a4453">
+    <circle cx="180" cy="160" r="7"/>
+    <circle cx="220" cy="160" r="7"/>
+  </g>
+  <path d="M182 182 q18 16 36 0" fill="none" stroke="#4a4453" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#ffb6a8" opacity="0.8">
+    <circle cx="168" cy="178" r="9"/>
+    <circle cx="232" cy="178" r="9"/>
+  </g>
+  <path d="M110 360 q90 -110 180 0 z" fill="#ff9ec4"/>
+  <circle cx="280" cy="110" r="10" fill="#b5ead7"/>
+  <circle cx="120" cy="120" r="8" fill="#c7ceea"/>
+</svg>

@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Editor / OS cruft
+*.swp
+Thumbs.db
+
+# Logs
+*.log
+
+# Local environments (only relevant if Python tooling is added later)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node (only if build tooling is added later)
+node_modules/
+
+# IDE
+.vscode/
+.idea/

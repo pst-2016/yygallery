@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="A happy flower">
+  <rect width="400" height="400" fill="#f3fff6"/>
+  <rect x="192" y="200" width="16" height="150" rx="8" fill="#7fc99a"/>
+  <path d="M200 290 q-55 -10 -70 -55 q55 -5 70 55" fill="#9fe0b8"/>
+  <path d="M200 270 q55 -10 70 -55 q-55 -5 -70 55" fill="#9fe0b8"/>
+  <g fill="#c7ceea">
+    <circle cx="200" cy="110" r="34"/>
+    <circle cx="252" cy="148" r="34"/>
+    <circle cx="232" cy="205" r="34"/>
+    <circle cx="168" cy="205" r="34"/>
+    <circle cx="148" cy="148" r="34"/>
+  </g>
+  <circle cx="200" cy="160" r="38" fill="#ffe7a0"/>
+  <g fill="#4a4453">
+    <circle cx="188" cy="155" r="5"/>
+    <circle cx="212" cy="155" r="5"/>
+  </g>
+  <path d="M186 170 q14 14 28 0" fill="none" stroke="#4a4453" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YY Gallery · Little Artist's Art</title>
+  <meta name="description" content="A cheerful gallery of artwork by a young artist." />
+
+  <!-- Social / link preview -->
+  <meta property="og:title" content="YY Gallery" />
+  <meta property="og:description" content="A cheerful gallery of artwork by a young artist." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/site/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">🎨</span>
+        <span class="brand-name">YY Gallery</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <div class="hero-card">
+        <p class="sparkles" aria-hidden="true">✨🌸✨</p>
+        <h1>Welcome to YY&nbsp;Gallery</h1>
+        <p class="lead">
+          A happy little place to share the drawings and paintings of a young artist.
+          Take a peek, have a smile, and enjoy the colours!
+        </p>
+        <a class="btn" href="gallery.html">See the artwork →</a>
+      </div>
+    </section>
+
+    <!-- Featured artworks -->
+    <section class="container section">
+      <h2 class="section-title">Featured artwork</h2>
+      <p class="section-subtitle">A few favourites — visit the gallery to see them all.</p>
+      <div class="gallery-grid" data-gallery data-limit="3" data-src="data/artworks.json"></div>
+      <p class="text-center" style="margin-top:2rem;">
+        <a class="btn btn--soft" href="gallery.html">Visit the full gallery</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with <span class="heart" aria-hidden="true">💖</span> · YY Gallery · <span id="year"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="A rainbow with clouds">
+  <rect width="400" height="400" fill="#eaf6ff"/>
+  <g fill="none" stroke-width="22" stroke-linecap="round">
+    <path d="M70 320 A130 130 0 0 1 330 320" stroke="#ff9ec4"/>
+    <path d="M100 320 A100 100 0 0 1 300 320" stroke="#ffd27d"/>
+    <path d="M130 320 A70 70 0 0 1 270 320" stroke="#b5ead7"/>
+    <path d="M160 320 A40 40 0 0 1 240 320" stroke="#c7ceea"/>
+  </g>
+  <g fill="#ffffff">
+    <ellipse cx="80" cy="320" rx="46" ry="30"/>
+    <ellipse cx="320" cy="320" rx="46" ry="30"/>
+  </g>
+  <circle cx="320" cy="90" r="34" fill="#ffe7a0"/>
+</svg>

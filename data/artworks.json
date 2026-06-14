@@ -1,0 +1,47 @@
+[
+  {
+    "id": "rainbow",
+    "title": "Rainbow Sky",
+    "date": "2026-05-20",
+    "medium": "Crayon on paper",
+    "image": "assets/images/artworks/rainbow.svg",
+    "thumb": "assets/images/artworks/rainbow.svg",
+    "description": "A big bright rainbow with two fluffy clouds and a little sun peeking out. (Placeholder — replace with a real artwork.)"
+  },
+  {
+    "id": "happy-cat",
+    "title": "Happy Cat",
+    "date": "2026-05-12",
+    "medium": "Marker on paper",
+    "image": "assets/images/artworks/cat.svg",
+    "thumb": "assets/images/artworks/cat.svg",
+    "description": "A smiling cat with long whiskers and pink ears. (Placeholder — replace with a real artwork.)"
+  },
+  {
+    "id": "smiling-flower",
+    "title": "Smiling Flower",
+    "date": "2026-04-30",
+    "medium": "Coloured pencil",
+    "image": "assets/images/artworks/flower.svg",
+    "thumb": "assets/images/artworks/flower.svg",
+    "description": "A cheerful flower with purple petals and green leaves. (Placeholder — replace with a real artwork.)"
+  },
+  {
+    "id": "sunny-day",
+    "title": "Sunny Day",
+    "date": "2026-04-18",
+    "medium": "Watercolour on paper",
+    "image": "assets/images/artworks/sunny-day.svg",
+    "thumb": "assets/images/artworks/sunny-day.svg",
+    "description": "A warm sun with rosy cheeks smiling over a sunny day. (Placeholder — replace with a real artwork.)"
+  },
+  {
+    "id": "butterfly",
+    "title": "Butterfly Friend",
+    "date": "2026-04-05",
+    "medium": "Marker on paper",
+    "image": "assets/images/artworks/butterfly.svg",
+    "thumb": "assets/images/artworks/butterfly.svg",
+    "description": "A colourful butterfly with pink and lavender wings. (Placeholder — replace with a real artwork.)"
+  }
+]

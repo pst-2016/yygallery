@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About · YY Gallery</title>
+  <meta name="description" content="Meet the young artist behind YY Gallery." />
+
+  <meta property="og:title" content="About · YY Gallery" />
+  <meta property="og:description" content="Meet the young artist behind YY Gallery." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/site/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">🎨</span>
+        <span class="brand-name">YY Gallery</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <h1 class="section-title">About the Artist</h1>
+      <p class="section-subtitle">Hello and welcome! 🌈</p>
+
+      <div class="about-grid">
+        <img class="about-photo"
+             src="assets/images/site/artist-placeholder.svg"
+             alt="A friendly drawing of the young artist (placeholder)." />
+        <div class="about-text">
+          <!-- TODO: Replace this placeholder text with the artist's real introduction. -->
+          <p>
+            Hi! I'm a young artist who loves to draw and paint. I like making
+            pictures of animals, rainbows, flowers, and everything that makes me
+            happy.
+          </p>
+          <p>
+            I started making art because it's so much fun to use lots of colours.
+            My favourite things to use are crayons, markers, and watercolour paints.
+          </p>
+          <p>
+            Thank you for visiting my little gallery — I hope my pictures make you
+            smile! 💗
+          </p>
+          <p style="color: var(--color-muted); font-size: 0.9rem;">
+            <em>(This is placeholder text — the real introduction will go here.)</em>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with <span class="heart" aria-hidden="true">💖</span> · YY Gallery · <span id="year"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

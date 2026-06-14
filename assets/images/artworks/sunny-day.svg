@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="A sunny day with a smiling sun">
+  <rect width="400" height="400" fill="#fffbe9"/>
+  <g stroke="#ffd27d" stroke-width="12" stroke-linecap="round">
+    <line x1="200" y1="40" x2="200" y2="80"/>
+    <line x1="200" y1="320" x2="200" y2="360"/>
+    <line x1="40" y1="200" x2="80" y2="200"/>
+    <line x1="320" y1="200" x2="360" y2="200"/>
+    <line x1="90" y1="90" x2="118" y2="118"/>
+    <line x1="310" y1="90" x2="282" y2="118"/>
+    <line x1="90" y1="310" x2="118" y2="282"/>
+    <line x1="310" y1="310" x2="282" y2="282"/>
+  </g>
+  <circle cx="200" cy="200" r="100" fill="#ffe7a0"/>
+  <g fill="#4a4453">
+    <circle cx="170" cy="185" r="10"/>
+    <circle cx="230" cy="185" r="10"/>
+  </g>
+  <path d="M160 220 q40 45 80 0" fill="none" stroke="#4a4453" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#ffb6a8" opacity="0.8">
+    <circle cx="158" cy="222" r="12"/>
+    <circle cx="242" cy="222" r="12"/>
+  </g>
+</svg>
