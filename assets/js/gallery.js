@@ -11,6 +11,10 @@
 
   const limit = parseInt(grid.dataset.limit || "0", 10); // 0 = show all
   const dataUrl = grid.dataset.src || "data/artworks.json";
+  const featuredIds = (grid.dataset.featured || "")
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean);
   const siteTimeZone = "Asia/Singapore";
   const datePartsPattern = /^(\d{4})-(\d{2})-(\d{2})$/;
 
@@ -185,7 +189,12 @@
       }
       // Newest first.
       items.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
-      const shown = limit > 0 ? items.slice(0, limit) : items;
+      const featured = featuredIds
+        .map((id) => items.find((art) => art.id === id))
+        .filter(Boolean);
+      const fallbackItems = items.filter((art) => !featuredIds.includes(art.id));
+      const selectedItems = featured.length > 0 ? featured.concat(fallbackItems) : items;
+      const shown = limit > 0 ? selectedItems.slice(0, limit) : selectedItems;
 
       grid.replaceChildren();
       shown.forEach((art) => grid.appendChild(makeCard(art)));

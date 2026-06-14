@@ -115,7 +115,8 @@ Kept to a minimum, in two small files:
   1. `fetch()` the `data/artworks.json` file.
   2. Build a card for each artwork (thumbnail + title) and insert it into the grid.
   3. On click, open a **lightbox** overlay showing the full image plus its details.
-  4. Later: optional sorting/filtering controls.
+  4. On the home page, respect `data-featured` IDs when choosing featured artworks.
+  5. Later: optional sorting/filtering controls.
 
 No bundler, no dependencies — these are plain `<script>` files loaded by the pages.
 

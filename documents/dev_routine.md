@@ -110,7 +110,8 @@ For Stage 2 content updates, keep the artwork workflow simple:
 4. Run `python scripts/import_artworks.py incoming/artworks`.
 5. Review `data/artworks.json` and the generated files under
    `assets/images/artworks/` and `assets/images/artworks/thumbs/`.
-6. Update page titles, meta descriptions, favicon, and About page content as needed.
+6. Update the home page featured artwork IDs in `index.html` if needed.
+7. Update page titles, meta descriptions, favicon, and About page content as needed.
 
 The import helper accepts JPG, PNG, and SVG source images. It writes JPG files by
 default. To choose another output format, pass `--format jpg`, `--format png`, or
