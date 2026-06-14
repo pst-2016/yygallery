@@ -15,33 +15,71 @@ roadmap, and [`documents/tech.md`](documents/tech.md) for the technical details.
 
 The gallery loads its data from a JSON file, so the site needs to be served over HTTP
 (opening the HTML file directly with `file://` will block that load). From the repo
-root run any one of these, then open the printed address:
+root run:
 
 ```bash
+conda activate yygallery
 python3 -m http.server 8000      # then visit http://localhost:8000
-# or
-npx serve .
 ```
 
 ## Adding a new artwork
 
-1. Put the picture in `assets/images/artworks/` (and a smaller copy in
-   `assets/images/artworks/thumbs/`).
-2. Add one entry to [`data/artworks.json`](data/artworks.json):
+The easiest workflow is to use the local import helper:
 
-   ```json
-   {
-     "id": "rainbow-cat",
-     "title": "Rainbow Cat",
-     "date": "2026-05-01",
-     "medium": "Watercolour on paper",
-     "image": "assets/images/artworks/rainbow-cat.jpg",
-     "thumb": "assets/images/artworks/thumbs/rainbow-cat.jpg",
-     "description": "A happy cat sitting under a big rainbow."
-   }
+1. Create `incoming/artworks/` if it does not exist.
+2. Put source images in `incoming/artworks/`.
+3. Optionally add `incoming/artworks/artworks.csv` with metadata.
+4. Run:
+
+   ```bash
+   conda activate yygallery
+   python scripts/import_artworks.py incoming/artworks
    ```
 
-3. Commit and push — GitHub Pages republishes automatically.
+By default, the script writes JPG files. To choose another output format, use
+`--format jpg`, `--format png`, or `--format svg`:
+
+```bash
+python scripts/import_artworks.py incoming/artworks --format png
+```
+
+Supported source formats are JPG, PNG, and SVG. SVG output is an SVG wrapper around
+a resized embedded image; it is not true vector tracing.
+
+The script writes full images to `assets/images/artworks/`, creates thumbnails in
+`assets/images/artworks/thumbs/`, and updates [`data/artworks.json`](data/artworks.json).
+
+You can also edit [`data/artworks.json`](data/artworks.json) manually. Each entry
+looks like this:
+
+```json
+{
+  "id": "rainbow-cat",
+  "title": "Rainbow Cat",
+  "date": "2026-05-01",
+  "medium": "Watercolour on paper",
+  "image": "assets/images/artworks/rainbow-cat.jpg",
+  "thumb": "assets/images/artworks/thumbs/rainbow-cat.jpg",
+  "alt": "A watercolour painting of a happy cat sitting under a big rainbow.",
+  "description": "A happy cat sitting under a big rainbow."
+}
+```
+
+Commit and push — GitHub Pages republishes automatically.
+
+## Updating the conda environment
+
+Create the environment once:
+
+```bash
+conda env create -f environment.yml
+```
+
+After `environment.yml` changes, update the existing environment:
+
+```bash
+conda env update -f environment.yml --prune
+```
 
 ## Deploying (GitHub Pages)
 

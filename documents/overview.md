@@ -63,10 +63,15 @@ yygallery/
 ├── data/
 │   └── artworks.json       # The list of artworks: title, date, medium, description, image paths
 │
+├── scripts/
+│   └── import_artworks.py   # Local helper to import artwork images and thumbnails
+│
 ├── documents/
 │   ├── overview.md         # This file — project intro, plan, and roadmap
-│   └── tech.md             # Technical decisions and how things are built
+│   ├── tech.md             # Technical decisions and how things are built
+│   └── dev_routine.md      # Local preview, GitHub Pages checks, and feedback loop
 │
+├── environment.yml          # Conda environment for preview and local helper scripts
 ├── .nojekyll               # Tells GitHub Pages to serve files as-is (skip Jekyll)
 └── README.md               # Short repo intro + how to run/preview locally
 ```
@@ -86,7 +91,10 @@ yygallery/
 | `assets/images/artworks/thumbs/` | Smaller copies of the artworks so the gallery loads quickly. |
 | `assets/images/site/` | Branding and decoration: logo, favicon, the artist's photo, doodle accents. |
 | `data/artworks.json` | The single source of truth for the gallery. To add art, add an entry here. |
+| `scripts/import_artworks.py` | Local helper that imports JPG/PNG/SVG artwork images, creates thumbnails, converts formats, and updates `data/artworks.json`. |
+| `environment.yml` | Minimal conda environment for local preview and helper scripts. |
 | `documents/` | Planning and technical notes (not part of the published site). |
+| `documents/dev_routine.md` | Development workflow: local preview, GitHub Pages checks, and user feedback loop. |
 | `.nojekyll` | Prevents GitHub Pages from running Jekyll, so our plain files are served untouched. |
 | `README.md` | Quick orientation for anyone opening the repo, plus how to preview locally. |
 
@@ -96,9 +104,11 @@ yygallery/
 
 This is the everyday workflow once the site is live:
 
-1. Save the picture into `assets/images/artworks/` (and a small thumbnail into
-   `assets/images/artworks/thumbs/`).
-2. Add one entry to `data/artworks.json`, for example:
+1. Save source pictures into `incoming/artworks/`.
+2. Optionally add metadata in `incoming/artworks/artworks.csv`.
+3. Run `python scripts/import_artworks.py incoming/artworks` to create optimized
+   images, thumbnails, and `data/artworks.json` entries.
+4. Review each entry in `data/artworks.json`, for example:
 
    ```json
    {
@@ -108,11 +118,12 @@ This is the everyday workflow once the site is live:
      "medium": "Watercolour on paper",
      "image": "assets/images/artworks/rainbow-cat.jpg",
      "thumb": "assets/images/artworks/thumbs/rainbow-cat.jpg",
+     "alt": "A watercolour painting of a happy cat sitting under a big rainbow.",
      "description": "A happy cat sitting under a big rainbow."
    }
    ```
 
-3. Commit and push. GitHub Pages republishes automatically — the new artwork appears
+5. Commit and push. GitHub Pages republishes automatically — the new artwork appears
    in the gallery. No code changes needed.
 
 ---
@@ -128,20 +139,22 @@ still have a working site.
 - Add a minimal `index.html` and enable **GitHub Pages** to confirm hosting works
   ("hello world" deploy).
 
-### Stage 1 — Core site (MVP)
+### Stage 1 — Core site (MVP) ✅
 - Build the three pages: **Home**, **Gallery**, **About**.
 - Create the pastel child-friendly theme in `style.css` (colours, fonts, layout).
 - Make the gallery render from `data/artworks.json` using 3–5 **placeholder** images.
+- Add a basic click-to-enlarge lightbox for artwork details.
 - Ensure the layout is responsive (looks good on phone, tablet, and desktop).
 
 ### Stage 2 — Real content
 - Replace placeholders with the **real artwork images** provided by the user.
 - Add the **artist's introduction** to the About page and a profile photo.
+- Add real descriptive `alt` text for each artwork.
 - Add a favicon, page titles, and basic social/preview meta tags.
 - Optimise images (resize, generate thumbnails) so pages load fast.
 
 ### Stage 3 — Polish & UX
-- Click-to-enlarge **lightbox** with the artwork's description.
+- Refine the **lightbox** experience if needed.
 - Optional **sorting/filtering** (e.g. newest first, or by category/medium).
 - Gentle animations and nice loading/empty states.
 - Accessibility pass (alt text, keyboard navigation, colour contrast).

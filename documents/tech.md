@@ -47,9 +47,15 @@ we can migrate to a generator (see §10) without throwing work away.
 
 ### Path note (important)
 
-Because the site is served from a sub-path (`/yygallery/`), links and asset
-references use **relative paths** (e.g. `assets/css/style.css`, not `/assets/...`).
-This keeps the site working both locally and on GitHub Pages without surprises.
+Because the site is served from a sub-path (`/yygallery/`), normal page links and
+asset references use **relative paths** (e.g. `assets/css/style.css`, not
+`/assets/...`). This keeps the site working both locally and on GitHub Pages without
+surprises.
+
+The one current exception is `404.html`, which uses `/yygallery/...` paths. GitHub
+Pages can show the same 404 file for missing nested URLs, where ordinary relative
+paths would resolve from the wrong folder. If the site moves to a custom domain, this
+404 path choice should be revisited.
 
 ---
 
@@ -132,6 +138,7 @@ the gallery. It is an array of objects:
     "medium": "Watercolour on paper",
     "image": "assets/images/artworks/rainbow-cat.jpg",
     "thumb": "assets/images/artworks/thumbs/rainbow-cat.jpg",
+    "alt": "A watercolour painting of a happy cat sitting under a big rainbow.",
     "description": "A happy cat sitting under a big rainbow."
   }
 ]
@@ -145,6 +152,7 @@ the gallery. It is an array of objects:
 | `medium` | What it's made with (crayon, watercolour, digital, …). Optional. |
 | `image` | Path to the full-size picture. |
 | `thumb` | Path to the small thumbnail used in the grid. |
+| `alt` | A concise visual description for screen readers. |
 | `description` | A sentence or two introducing the piece. |
 
 Keeping data separate from layout means **adding art never requires touching HTML or
@@ -156,17 +164,17 @@ JavaScript**.
 
 Images are the most important content, so we handle them with a little care:
 
-- **Formats:** JPG/PNG for photos of physical art; **WebP** where convenient for
-  smaller files. (Optional `<picture>` fallbacks later.)
+- **Formats:** JPG/PNG for photos of physical art. The local import helper accepts
+  JPG, PNG, and SVG source files and can write JPG, PNG, or SVG outputs.
 - **Two sizes per piece:** a **thumbnail** (grid, ~400px wide) and the **full image**
   (lightbox, e.g. ≤1600px wide). Thumbnails keep the gallery fast.
 - **Lazy loading:** grid images use `loading="lazy"` so off-screen pictures load only
   when needed.
-- **Alt text:** every image has a meaningful `alt` describing the artwork, for
-  accessibility and screen readers.
+- **Alt text:** every artwork entry should include meaningful `alt` text describing
+  the image, for accessibility and screen readers.
 - **Optimisation:** images are resized/compressed before committing. This can be done
-  by hand at first; an optional helper script (e.g. using `sharp` or ImageMagick) can
-  be added in Stage 2 if the collection grows.
+  with `scripts/import_artworks.py`, which uses Pillow and CairoSVG from the conda
+  environment to create full-size images and square thumbnails.
 
 ---
 
@@ -196,8 +204,9 @@ will be blocked by the browser**, so use a local server when testing the gallery
   readable **contrast** against text.
 - **Performance:** thumbnails + lazy loading, a single small CSS file, and minimal
   JavaScript keep the site fast even on phones.
-- **SEO / sharing:** per-page `<title>` and meta description, plus Open Graph tags so
-  shared links show a nice title and image.
+- **SEO / sharing:** per-page `<title>` and meta description, plus basic Open Graph
+  tags. Preview images can be added in Stage 2 once the real artwork/profile assets
+  are chosen.
 
 ---
 
@@ -208,8 +217,8 @@ We adopt these **only** if the simple approach starts to hurt:
 - **Reusing the header/footer:** if duplicating navigation across pages becomes
   tedious, introduce a lightweight static site generator (**Eleventy** is a good,
   minimal fit) to share layouts — while keeping the same content and data model.
-- **Image pipeline:** a small script to auto-generate thumbnails and WebP versions
-  (a **Python + Pillow** script fits well here — see below).
+- **Image pipeline:** extend `scripts/import_artworks.py` if WebP versions, true SVG
+  vector tracing, or more advanced image handling are needed later.
 - **Custom domain + HTTPS** via GitHub Pages settings.
 - **A journal/blog:** Markdown posts compiled to pages (again, Eleventy-friendly).
 
@@ -221,8 +230,8 @@ artworks, an image-optimisation pipeline, content generation, or any small back-
 service — that work will most likely be done in **Python**, which is the maintainer's
 stronger language. Good fits would be:
 
-- **Helper scripts** (e.g. `scripts/` using **Pillow**) to resize images and
-  regenerate thumbnails and the `artworks.json` entries.
+- **Helper scripts** (e.g. `scripts/import_artworks.py` using **Pillow**) to resize
+  images and regenerate thumbnails and the `artworks.json` entries.
 - A small **Flask** or **FastAPI** service, if a real back-end is ever needed.
 
 Crucially, none of this changes the published site today: GitHub Pages would still
@@ -238,7 +247,8 @@ not a dead end.
 
 - **Indentation:** 2 spaces for HTML, CSS, JS, and JSON.
 - **Naming:** files and `id`s are `lowercase-with-hyphens`.
-- **Paths:** always **relative** (for the GitHub Pages sub-path).
+- **Paths:** use **relative** paths for normal pages; `404.html` currently uses
+  `/yygallery/...` paths for GitHub Pages project-site fallback behaviour.
 - **Encoding:** UTF-8; `<meta charset="utf-8">` on every page.
 - **Commits:** small and descriptive (e.g. `Add "Rainbow Cat" artwork`).
 

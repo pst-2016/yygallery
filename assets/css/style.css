@@ -86,7 +86,7 @@ h1, h2, h3 {
   border: none;
   cursor: pointer;
   background: var(--color-primary);
-  color: #fff;
+  color: #5a2540;
   box-shadow: var(--shadow);
   transition: transform 0.15s ease, background 0.15s ease;
 }
@@ -97,7 +97,7 @@ h1, h2, h3 {
 }
 .btn--soft {
   background: var(--color-accent);
-  color: #3f6f5e;
+  color: #245747;
 }
 .btn--soft:hover { background: #9fdcc6; }
 
@@ -276,6 +276,7 @@ h1, h2, h3 {
 .lightbox.is-open { opacity: 1; visibility: visible; }
 
 .lightbox__panel {
+  position: relative;
   background: var(--color-surface);
   border-radius: var(--radius);
   max-width: 860px;

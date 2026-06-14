@@ -6,6 +6,7 @@
     "medium": "Crayon on paper",
     "image": "assets/images/artworks/rainbow.svg",
     "thumb": "assets/images/artworks/rainbow.svg",
+    "alt": "A bright rainbow with two fluffy clouds and a little sun.",
     "description": "A big bright rainbow with two fluffy clouds and a little sun peeking out. (Placeholder — replace with a real artwork.)"
   },
   {
@@ -15,6 +16,7 @@
     "medium": "Marker on paper",
     "image": "assets/images/artworks/cat.svg",
     "thumb": "assets/images/artworks/cat.svg",
+    "alt": "A smiling cat with long whiskers and pink ears.",
     "description": "A smiling cat with long whiskers and pink ears. (Placeholder — replace with a real artwork.)"
   },
   {
@@ -24,6 +26,7 @@
     "medium": "Coloured pencil",
     "image": "assets/images/artworks/flower.svg",
     "thumb": "assets/images/artworks/flower.svg",
+    "alt": "A cheerful flower with purple petals and green leaves.",
     "description": "A cheerful flower with purple petals and green leaves. (Placeholder — replace with a real artwork.)"
   },
   {
@@ -33,6 +36,7 @@
     "medium": "Watercolour on paper",
     "image": "assets/images/artworks/sunny-day.svg",
     "thumb": "assets/images/artworks/sunny-day.svg",
+    "alt": "A warm sun with rosy cheeks smiling over a sunny day.",
     "description": "A warm sun with rosy cheeks smiling over a sunny day. (Placeholder — replace with a real artwork.)"
   },
   {
@@ -42,6 +46,207 @@
     "medium": "Marker on paper",
     "image": "assets/images/artworks/butterfly.svg",
     "thumb": "assets/images/artworks/butterfly.svg",
+    "alt": "A colourful butterfly with pink and lavender wings.",
     "description": "A colourful butterfly with pink and lavender wings. (Placeholder — replace with a real artwork.)"
+  },
+  {
+    "id": "behind-the-mask",
+    "title": "Behind the Mask",
+    "date": "2026-01-01",
+    "medium": "Watercolour",
+    "image": "assets/images/artworks/behind-the-mask.jpg",
+    "thumb": "assets/images/artworks/thumbs/behind-the-mask.jpg",
+    "alt": "A watercolour painting of a girl inside a large face mask with another version of herself nearby.",
+    "description": "This painting shows a girl sitting inside a giant mask of her own face while another version of her watches quietly. It explores the contrast between looking calm on the outside and carrying a rich inner world inside."
+  },
+  {
+    "id": "once-upon-a-dream",
+    "title": "Once Upon a Dream",
+    "date": "2026-01-01",
+    "medium": "Coloured pencils",
+    "image": "assets/images/artworks/once-upon-a-dream.jpg",
+    "thumb": "assets/images/artworks/thumbs/once-upon-a-dream.jpg",
+    "alt": "A colourful fantasy artwork with a dragon, a dreaming girl, and a portal between worlds.",
+    "description": "This artwork shows a magical fairytale dream centred around a dragon. A portal connects a colourful fantasy world with a modern city, suggesting that even as we grow up, part of us still holds onto childhood wonder."
+  },
+  {
+    "id": "dance-like-a-flame",
+    "title": "Dance Like a Flame",
+    "date": "2026-01-01",
+    "medium": "Oil painting",
+    "image": "assets/images/artworks/dance-like-a-flame.jpg",
+    "thumb": "assets/images/artworks/thumbs/dance-like-a-flame.jpg",
+    "alt": "An oil painting of a girl watching a candle flame shaped like a graceful ballerina.",
+    "description": "This artwork shows a little girl gazing into a candle whose flame dances like a ballerina. The swans and ballerina feet reflect her dream of becoming a dancer, while the warm glowing colours show the strength of her passion."
+  },
+  {
+    "id": "soft-comfort",
+    "title": "Soft Comfort",
+    "date": "2026-01-01",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/soft-comfort.jpg",
+    "thumb": "assets/images/artworks/thumbs/soft-comfort.jpg",
+    "alt": "A pencil sketch of a girl surrounded by soft toys in a warm and comforting scene.",
+    "description": "This sketch shows a girl finding comfort in her soft toys. It captures a quiet everyday moment with warmth and cosiness, using shading to make the toys feel soft, fluffy, and three-dimensional."
+  },
+  {
+    "id": "chij-t-shirt-design",
+    "title": "CHIJ T-Shirt Design",
+    "date": "2025-01-01",
+    "medium": "Marker",
+    "image": "assets/images/artworks/chij-t-shirt-design.jpg",
+    "thumb": "assets/images/artworks/thumbs/chij-t-shirt-design.jpg",
+    "alt": "A white line-art camp T-shirt design with a tent, campfire, students, and a vine border.",
+    "description": "This clean white line-art design celebrates P5 Camp 2025 with a central tent and campfire scene, playful student characters, and a vine border symbolising teamwork, inclusivity, nature, and shared memories."
+  },
+  {
+    "id": "safari",
+    "title": "Safari",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/safari.jpg",
+    "thumb": "assets/images/artworks/thumbs/safari.jpg",
+    "alt": "A safari-themed artwork about wildlife and outdoor adventure.",
+    "description": "A safari-themed artwork that suggests wildlife, adventure, and the energy of exploring the natural world."
+  },
+  {
+    "id": "save-the-frog",
+    "title": "Save the Frog",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/save-the-frog.jpg",
+    "thumb": "assets/images/artworks/thumbs/save-the-frog.jpg",
+    "alt": "An artwork about saving frogs and protecting their natural habitat.",
+    "description": "An environmental artwork about protecting frogs and the wetland habitats they depend on."
+  },
+  {
+    "id": "ij-bag-design",
+    "title": "IJ Bag Design",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/ij-bag-design.jpg",
+    "thumb": "assets/images/artworks/thumbs/ij-bag-design.jpg",
+    "alt": "A decorative IJ bag design artwork.",
+    "description": "A bag design artwork created for IJ, with a clean decorative composition intended for everyday use."
+  },
+  {
+    "id": "save-the-heart",
+    "title": "Save the Heart",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/save-the-heart.jpg",
+    "thumb": "assets/images/artworks/thumbs/save-the-heart.jpg",
+    "alt": "A symbolic artwork centred on the idea of saving and protecting the heart.",
+    "description": "A symbolic artwork about protecting what matters and caring for the world around us."
+  },
+  {
+    "id": "sketch-1",
+    "title": "Sketch Study 1",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-1.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-1.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-2",
+    "title": "Sketch Study 2",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-2.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-2.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-3",
+    "title": "Sketch Study 3",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-3.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-3.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-4",
+    "title": "Sketch Study 4",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-4.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-4.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-5",
+    "title": "Sketch Study 5",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-5.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-5.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-6",
+    "title": "Sketch Study 6",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-6.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-6.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-7",
+    "title": "Sketch Study 7",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-7.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-7.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-8",
+    "title": "Sketch Study 8",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-8.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-8.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "sketch-9",
+    "title": "Sketch Study 9",
+    "date": "",
+    "medium": "Pencil sketch",
+    "image": "assets/images/artworks/sketch-9.jpg",
+    "thumb": "assets/images/artworks/thumbs/sketch-9.jpg",
+    "alt": "A pencil sketch study.",
+    "description": "A sketch study focused on observation, proportion, and shading."
+  },
+  {
+    "id": "together-for-nature",
+    "title": "Together for Nature",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/together-for-nature.jpg",
+    "thumb": "assets/images/artworks/thumbs/together-for-nature.jpg",
+    "alt": "An artwork about people coming together to protect nature.",
+    "description": "An environmental artwork about working together to care for nature and protect the world we share."
+  },
+  {
+    "id": "what-hides-in-the-dark",
+    "title": "What Hides in the Dark",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/what-hides-in-the-dark.jpg",
+    "thumb": "assets/images/artworks/thumbs/what-hides-in-the-dark.jpg",
+    "alt": "A dark atmospheric artwork with hidden shapes and a mysterious mood.",
+    "description": "A darker, atmospheric artwork that invites viewers to imagine what might be hidden in the shadows."
   }
 ]

@@ -8,6 +8,9 @@ Thumbs.db
 # Logs
 *.log
 
+# Local staging folders for content import
+incoming/
+
 # Local environments (only relevant if Python tooling is added later)
 .venv/
 venv/
