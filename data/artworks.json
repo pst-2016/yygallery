@@ -1,58 +1,8 @@
 [
   {
-    "id": "rainbow",
-    "title": "Rainbow Sky",
-    "date": "2026-05-20",
-    "medium": "Crayon on paper",
-    "image": "assets/images/artworks/rainbow.svg",
-    "thumb": "assets/images/artworks/rainbow.svg",
-    "alt": "A bright rainbow with two fluffy clouds and a little sun.",
-    "description": "A big bright rainbow with two fluffy clouds and a little sun peeking out. (Placeholder — replace with a real artwork.)"
-  },
-  {
-    "id": "happy-cat",
-    "title": "Happy Cat",
-    "date": "2026-05-12",
-    "medium": "Marker on paper",
-    "image": "assets/images/artworks/cat.svg",
-    "thumb": "assets/images/artworks/cat.svg",
-    "alt": "A smiling cat with long whiskers and pink ears.",
-    "description": "A smiling cat with long whiskers and pink ears. (Placeholder — replace with a real artwork.)"
-  },
-  {
-    "id": "smiling-flower",
-    "title": "Smiling Flower",
-    "date": "2026-04-30",
-    "medium": "Coloured pencil",
-    "image": "assets/images/artworks/flower.svg",
-    "thumb": "assets/images/artworks/flower.svg",
-    "alt": "A cheerful flower with purple petals and green leaves.",
-    "description": "A cheerful flower with purple petals and green leaves. (Placeholder — replace with a real artwork.)"
-  },
-  {
-    "id": "sunny-day",
-    "title": "Sunny Day",
-    "date": "2026-04-18",
-    "medium": "Watercolour on paper",
-    "image": "assets/images/artworks/sunny-day.svg",
-    "thumb": "assets/images/artworks/sunny-day.svg",
-    "alt": "A warm sun with rosy cheeks smiling over a sunny day.",
-    "description": "A warm sun with rosy cheeks smiling over a sunny day. (Placeholder — replace with a real artwork.)"
-  },
-  {
-    "id": "butterfly",
-    "title": "Butterfly Friend",
-    "date": "2026-04-05",
-    "medium": "Marker on paper",
-    "image": "assets/images/artworks/butterfly.svg",
-    "thumb": "assets/images/artworks/butterfly.svg",
-    "alt": "A colourful butterfly with pink and lavender wings.",
-    "description": "A colourful butterfly with pink and lavender wings. (Placeholder — replace with a real artwork.)"
-  },
-  {
     "id": "behind-the-mask",
     "title": "Behind the Mask",
-    "date": "2026-01-01",
+    "date": "1/1/26",
     "medium": "Watercolour",
     "image": "assets/images/artworks/behind-the-mask.jpg",
     "thumb": "assets/images/artworks/thumbs/behind-the-mask.jpg",
@@ -62,7 +12,7 @@
   {
     "id": "once-upon-a-dream",
     "title": "Once Upon a Dream",
-    "date": "2026-01-01",
+    "date": "1/1/26",
     "medium": "Coloured pencils",
     "image": "assets/images/artworks/once-upon-a-dream.jpg",
     "thumb": "assets/images/artworks/thumbs/once-upon-a-dream.jpg",
@@ -72,7 +22,7 @@
   {
     "id": "dance-like-a-flame",
     "title": "Dance Like a Flame",
-    "date": "2026-01-01",
+    "date": "1/1/26",
     "medium": "Oil painting",
     "image": "assets/images/artworks/dance-like-a-flame.jpg",
     "thumb": "assets/images/artworks/thumbs/dance-like-a-flame.jpg",
@@ -82,7 +32,7 @@
   {
     "id": "soft-comfort",
     "title": "Soft Comfort",
-    "date": "2026-01-01",
+    "date": "1/1/26",
     "medium": "Pencil sketch",
     "image": "assets/images/artworks/soft-comfort.jpg",
     "thumb": "assets/images/artworks/thumbs/soft-comfort.jpg",
@@ -92,7 +42,7 @@
   {
     "id": "chij-t-shirt-design",
     "title": "CHIJ T-Shirt Design",
-    "date": "2025-01-01",
+    "date": "1/1/25",
     "medium": "Marker",
     "image": "assets/images/artworks/chij-t-shirt-design.jpg",
     "thumb": "assets/images/artworks/thumbs/chij-t-shirt-design.jpg",
@@ -248,5 +198,325 @@
     "thumb": "assets/images/artworks/thumbs/what-hides-in-the-dark.jpg",
     "alt": "A dark atmospheric artwork with hidden shapes and a mysterious mood.",
     "description": "A darker, atmospheric artwork that invites viewers to imagine what might be hidden in the shadows."
+  },
+  {
+    "id": "digit-art-1",
+    "title": "Digit Art 1",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-1.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-1.jpg",
+    "alt": "Digit Art 1",
+    "description": ""
+  },
+  {
+    "id": "digit-art-10",
+    "title": "Digit Art 10",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-10.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-10.jpg",
+    "alt": "Digit Art 10",
+    "description": ""
+  },
+  {
+    "id": "digit-art-11",
+    "title": "Digit Art 11",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-11.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-11.jpg",
+    "alt": "Digit Art 11",
+    "description": ""
+  },
+  {
+    "id": "digit-art-12",
+    "title": "Digit Art 12",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-12.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-12.jpg",
+    "alt": "Digit Art 12",
+    "description": ""
+  },
+  {
+    "id": "digit-art-13",
+    "title": "Digit Art 13",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-13.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-13.jpg",
+    "alt": "Digit Art 13",
+    "description": ""
+  },
+  {
+    "id": "digit-art-14",
+    "title": "Digit Art 14",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-14.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-14.jpg",
+    "alt": "Digit Art 14",
+    "description": ""
+  },
+  {
+    "id": "digit-art-15",
+    "title": "Digit Art 15",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-15.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-15.jpg",
+    "alt": "Digit Art 15",
+    "description": ""
+  },
+  {
+    "id": "digit-art-18",
+    "title": "Digit Art 18",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-18.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-18.jpg",
+    "alt": "Digit Art 18",
+    "description": ""
+  },
+  {
+    "id": "digit-art-19",
+    "title": "Digit Art 19",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-19.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-19.jpg",
+    "alt": "Digit Art 19",
+    "description": ""
+  },
+  {
+    "id": "digit-art-2",
+    "title": "Digit Art 2",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-2.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-2.jpg",
+    "alt": "Digit Art 2",
+    "description": ""
+  },
+  {
+    "id": "digit-art-20",
+    "title": "Digit Art 20",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-20.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-20.jpg",
+    "alt": "Digit Art 20",
+    "description": ""
+  },
+  {
+    "id": "digit-art-21",
+    "title": "Digit Art 21",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-21.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-21.jpg",
+    "alt": "Digit Art 21",
+    "description": ""
+  },
+  {
+    "id": "digit-art-22",
+    "title": "Digit Art 22",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-22.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-22.jpg",
+    "alt": "Digit Art 22",
+    "description": ""
+  },
+  {
+    "id": "digit-art-23",
+    "title": "Digit Art 23",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-23.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-23.jpg",
+    "alt": "Digit Art 23",
+    "description": ""
+  },
+  {
+    "id": "digit-art-24",
+    "title": "Digit Art 24",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-24.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-24.jpg",
+    "alt": "Digit Art 24",
+    "description": ""
+  },
+  {
+    "id": "digit-art-26",
+    "title": "Digit Art 26",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-26.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-26.jpg",
+    "alt": "Digit Art 26",
+    "description": ""
+  },
+  {
+    "id": "digit-art-27",
+    "title": "Digit Art 27",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-27.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-27.jpg",
+    "alt": "Digit Art 27",
+    "description": ""
+  },
+  {
+    "id": "digit-art-28",
+    "title": "Digit Art 28",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-28.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-28.jpg",
+    "alt": "Digit Art 28",
+    "description": ""
+  },
+  {
+    "id": "digit-art-29",
+    "title": "Digit Art 29",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-29.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-29.jpg",
+    "alt": "Digit Art 29",
+    "description": ""
+  },
+  {
+    "id": "digit-art-3",
+    "title": "Digit Art 3",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-3.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-3.jpg",
+    "alt": "Digit Art 3",
+    "description": ""
+  },
+  {
+    "id": "digit-art-30",
+    "title": "Digit Art 30",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-30.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-30.jpg",
+    "alt": "Digit Art 30",
+    "description": ""
+  },
+  {
+    "id": "digit-art-31",
+    "title": "Digit Art 31",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-31.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-31.jpg",
+    "alt": "Digit Art 31",
+    "description": ""
+  },
+  {
+    "id": "digit-art-32",
+    "title": "Digit Art 32",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-32.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-32.jpg",
+    "alt": "Digit Art 32",
+    "description": ""
+  },
+  {
+    "id": "digit-art-33",
+    "title": "Digit Art 33",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-33.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-33.jpg",
+    "alt": "Digit Art 33",
+    "description": ""
+  },
+  {
+    "id": "digit-art-34",
+    "title": "Digit Art 34",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-34.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-34.jpg",
+    "alt": "Digit Art 34",
+    "description": ""
+  },
+  {
+    "id": "digit-art-4",
+    "title": "Digit Art 4",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-4.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-4.jpg",
+    "alt": "Digit Art 4",
+    "description": ""
+  },
+  {
+    "id": "digit-art-5",
+    "title": "Digit Art 5",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-5.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-5.jpg",
+    "alt": "Digit Art 5",
+    "description": ""
+  },
+  {
+    "id": "digit-art-6",
+    "title": "Digit Art 6",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-6.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-6.jpg",
+    "alt": "Digit Art 6",
+    "description": ""
+  },
+  {
+    "id": "digit-art-7",
+    "title": "Digit Art 7",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-7.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-7.jpg",
+    "alt": "Digit Art 7",
+    "description": ""
+  },
+  {
+    "id": "digit-art-8",
+    "title": "Digit Art 8",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-8.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-8.jpg",
+    "alt": "Digit Art 8",
+    "description": ""
+  },
+  {
+    "id": "digit-art-9",
+    "title": "Digit Art 9",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/digit-art-9.jpg",
+    "thumb": "assets/images/artworks/thumbs/digit-art-9.jpg",
+    "alt": "Digit Art 9",
+    "description": ""
+  },
+  {
+    "id": "favicon",
+    "title": "Favicon",
+    "date": "",
+    "medium": "",
+    "image": "assets/images/artworks/favicon.jpg",
+    "thumb": "assets/images/artworks/thumbs/favicon.jpg",
+    "alt": "Favicon",
+    "description": ""
   }
 ]

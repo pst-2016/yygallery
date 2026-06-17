@@ -102,16 +102,36 @@ the GitHub Pages project URL. Revisit this if the site moves to a custom domain.
 5. At the end of each roadmap phase, review docs and code together so
    `overview.md`, `tech.md`, `README.md`, and the site remain consistent.
 
-For Stage 2 content updates, keep the artwork workflow simple:
+For Stage 2 content updates, keep the artwork workflow simple.
+
+### Artwork Upload Workflow
 
 1. Create `incoming/artworks/` if it does not exist.
 2. Put source artwork images into `incoming/artworks/`.
-3. Add optional metadata in `incoming/artworks/artworks.csv`.
-4. Run `python scripts/import_artworks.py incoming/artworks`.
-5. Review `data/artworks.json` and the generated files under
+3. Add missing image rows to `incoming/artworks/artworks.csv`:
+
+   ```bash
+   python scripts/import_artworks.py incoming/artworks --update-manifest
+   ```
+
+4. Edit `incoming/artworks/artworks.csv` with captions and metadata:
+
+   - `title`: artwork title shown on cards and in the lightbox.
+   - `date`: `YYYY-MM-DD` if known; leave blank if uncertain.
+   - `medium`: e.g. `Pencil sketch`, `Watercolour`, `Oil painting`.
+   - `description`: caption shown in the lightbox.
+   - `alt`: concise visual description for screen readers.
+
+5. Import the images into the site:
+
+   ```bash
+   python scripts/import_artworks.py incoming/artworks
+   ```
+
+6. Review `data/artworks.json` and the generated files under
    `assets/images/artworks/` and `assets/images/artworks/thumbs/`.
-6. Update the home page featured artwork IDs in `index.html` if needed.
-7. Update page titles, meta descriptions, favicon, and About page content as needed.
+7. Update the home page featured artwork IDs in `index.html` if needed.
+8. Update page titles, meta descriptions, favicon, and About page content as needed.
 
 The import helper accepts JPG, PNG, and SVG source images. It writes JPG files by
 default. To choose another output format, pass `--format jpg`, `--format png`, or

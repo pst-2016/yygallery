@@ -175,7 +175,8 @@ Images are the most important content, so we handle them with a little care:
   the image, for accessibility and screen readers.
 - **Optimisation:** images are resized/compressed before committing. This can be done
   with `scripts/import_artworks.py`, which uses Pillow and CairoSVG from the conda
-  environment to create full-size images and square thumbnails.
+  environment to update the artwork CSV manifest, create full-size images, and create
+  square thumbnails.
 
 ---
 

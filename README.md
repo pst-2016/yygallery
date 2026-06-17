@@ -28,8 +28,15 @@ The easiest workflow is to use the local import helper:
 
 1. Create `incoming/artworks/` if it does not exist.
 2. Put source images in `incoming/artworks/`.
-3. Optionally add `incoming/artworks/artworks.csv` with metadata.
-4. Run:
+3. Add missing CSV rows:
+
+   ```bash
+   conda activate yygallery
+   python scripts/import_artworks.py incoming/artworks --update-manifest
+   ```
+
+4. Edit `incoming/artworks/artworks.csv` with captions and metadata.
+5. Import:
 
    ```bash
    conda activate yygallery

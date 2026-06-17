@@ -3,6 +3,7 @@
 Example:
   python scripts/import_artworks.py incoming/artworks
   python scripts/import_artworks.py incoming/artworks --format png
+  python scripts/import_artworks.py incoming/artworks --update-manifest
 
 Optional metadata manifest:
   incoming/artworks/artworks.csv
@@ -70,6 +71,11 @@ def parse_args():
     action="store_true",
     help="Show what would be imported without writing files.",
   )
+  parser.add_argument(
+    "--update-manifest",
+    action="store_true",
+    help="Add missing image rows to the CSV manifest without importing images.",
+  )
   return parser.parse_args()
 
 
@@ -106,6 +112,74 @@ def load_manifest(manifest_path):
         if key is not None
       }
   return rows
+
+
+def default_manifest_path(source_dir):
+  return source_dir / DEFAULT_MANIFEST_NAME
+
+
+def manifest_fieldnames():
+  return ["filename", "id", "title", "date", "medium", "description", "alt"]
+
+
+def load_manifest_rows(manifest_path):
+  if not manifest_path.exists():
+    return manifest_fieldnames(), []
+
+  with manifest_path.open("r", encoding="utf-8-sig", newline="") as file_obj:
+    reader = csv.DictReader(file_obj)
+    if not reader.fieldnames:
+      return manifest_fieldnames(), []
+    return reader.fieldnames, list(reader)
+
+
+def write_manifest_rows(manifest_path, fieldnames, rows):
+  manifest_path.parent.mkdir(parents=True, exist_ok=True)
+  with manifest_path.open("w", encoding="utf-8", newline="") as file_obj:
+    writer = csv.DictWriter(file_obj, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(rows)
+
+
+def build_manifest_row(source_path):
+  title = title_from_stem(source_path.stem)
+  return {
+    "filename": source_path.name,
+    "id": slugify(title),
+    "title": title,
+    "date": "",
+    "medium": "",
+    "description": "",
+    "alt": "",
+  }
+
+
+def update_manifest(source_dir):
+  manifest_path = default_manifest_path(source_dir)
+  fieldnames, rows = load_manifest_rows(manifest_path)
+  required_fields = manifest_fieldnames()
+  merged_fieldnames = list(fieldnames)
+
+  for fieldname in required_fields:
+    if fieldname not in merged_fieldnames:
+      merged_fieldnames.append(fieldname)
+
+  existing_filenames = {
+    (row.get("filename") or "").strip()
+    for row in rows
+    if (row.get("filename") or "").strip()
+  }
+  added_rows = []
+
+  for source_path in image_files(source_dir):
+    if source_path.name in existing_filenames:
+      continue
+    row = build_manifest_row(source_path)
+    rows.append(row)
+    added_rows.append(row)
+
+  write_manifest_rows(manifest_path, merged_fieldnames, rows)
+  return manifest_path, added_rows
 
 
 def load_artworks():
@@ -280,9 +354,19 @@ def main():
   if not source_dir.exists() or not source_dir.is_dir():
     raise SystemExit(f"Source folder does not exist: {source_dir}")
 
+  if args.update_manifest:
+    manifest_path, added_rows = update_manifest(source_dir)
+    if added_rows:
+      for row in added_rows:
+        print(f"added manifest row: {row['filename']} -> {row['id']}")
+    else:
+      print("Manifest already has rows for all images.")
+    print(f"Updated {relative_path(manifest_path)}")
+    return 0
+
   if manifest_path is None:
-    default_manifest = source_dir / DEFAULT_MANIFEST_NAME
-    manifest_path = default_manifest if default_manifest.exists() else None
+    discovered_manifest = default_manifest_path(source_dir)
+    manifest_path = discovered_manifest if discovered_manifest.exists() else None
   else:
     manifest_path = manifest_path.resolve()
 
